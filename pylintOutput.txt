@@ -1,0 +1,117 @@
+************* Module app
+C:  7, 0: Trailing whitespace (trailing-whitespace)
+C: 26, 0: Exactly one space required after comma
+@app.route('/signUp',methods=['POST'])
+                    ^ (bad-whitespace)
+C: 38, 0: Trailing whitespace (trailing-whitespace)
+C: 45, 0: Trailing whitespace (trailing-whitespace)
+C: 54, 0: Final newline missing (missing-final-newline)
+C:  1, 0: Missing module docstring (missing-docstring)
+C:  5, 0: Invalid constant name "app" (invalid-name)
+C: 19, 0: Missing function docstring (missing-docstring)
+C: 23, 0: Invalid function name "showSignUp" (invalid-name)
+C: 23, 0: Missing function docstring (missing-docstring)
+C: 27, 0: Invalid function name "signUp" (invalid-name)
+C: 27, 0: Missing function docstring (missing-docstring)
+
+
+Report
+======
+16 statements analysed.
+
+Statistics by type
+------------------
+
++---------+-------+-----------+-----------+------------+---------+
+|type     |number |old number |difference |%documented |%badname |
++=========+=======+===========+===========+============+=========+
+|module   |1      |1          |=          |0.00        |0.00     |
++---------+-------+-----------+-----------+------------+---------+
+|class    |0      |0          |=          |0           |0        |
++---------+-------+-----------+-----------+------------+---------+
+|method   |0      |0          |=          |0           |0        |
++---------+-------+-----------+-----------+------------+---------+
+|function |3      |3          |=          |0.00        |66.67    |
++---------+-------+-----------+-----------+------------+---------+
+
+
+
+External dependencies
+---------------------
+::
+
+    flask (app)
+      \-json (app)
+
+
+
+Raw metrics
+-----------
+
++----------+-------+------+---------+-----------+
+|type      |number |%     |previous |difference |
++==========+=======+======+=========+===========+
+|code      |22     |39.29 |23       |-1.00      |
++----------+-------+------+---------+-----------+
+|docstring |0      |0.00  |0        |=          |
++----------+-------+------+---------+-----------+
+|comment   |21     |37.50 |20       |+1.00      |
++----------+-------+------+---------+-----------+
+|empty     |13     |23.21 |13       |=          |
++----------+-------+------+---------+-----------+
+
+
+
+Duplication
+-----------
+
++-------------------------+------+---------+-----------+
+|                         |now   |previous |difference |
++=========================+======+=========+===========+
+|nb duplicated lines      |0     |0        |=          |
++-------------------------+------+---------+-----------+
+|percent duplicated lines |0.000 |0.000    |=          |
++-------------------------+------+---------+-----------+
+
+
+
+Messages by category
+--------------------
+
++-----------+-------+---------+-----------+
+|type       |number |previous |difference |
++===========+=======+=========+===========+
+|convention |12     |12       |=          |
++-----------+-------+---------+-----------+
+|refactor   |0      |0        |=          |
++-----------+-------+---------+-----------+
+|warning    |0      |2        |-2.00      |
++-----------+-------+---------+-----------+
+|error      |0      |2        |-2.00      |
++-----------+-------+---------+-----------+
+
+
+
+Messages
+--------
+
++----------------------+------------+
+|message id            |occurrences |
++======================+============+
+|missing-docstring     |4           |
++----------------------+------------+
+|trailing-whitespace   |3           |
++----------------------+------------+
+|invalid-name          |3           |
++----------------------+------------+
+|missing-final-newline |1           |
++----------------------+------------+
+|bad-whitespace        |1           |
++----------------------+------------+
+
+
+
+Global evaluation
+-----------------
+Your code has been rated at 2.50/10 (previous run: -4.12/10, +6.62)
+

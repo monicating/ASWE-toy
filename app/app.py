@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request, json
-from flask.ext.mysql import MySQL
-from werkzeug import generate_password_hash, check_password_hash
+#from flask.ext.mysql import MySQL
+#from werkzeug import generate_password_hash, check_password_hash
 
 app = Flask(__name__)
 # mysql = MySQL()
