@@ -7,10 +7,10 @@ import sqlalchemy
 app = Flask(__name__)
 
 engine = sqlalchemy.create_engine('mysql://root:mysql@127.0.0.1') # connect to server
-engine.execute("DROP SCHEMA IF EXISTS ASWE_TOY") 
-engine.execute("CREATE SCHEMA ASWE_TOY") 
-engine.execute("USE ASWE_TOY")
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:mysql@127.0.0.1/ASWE_TOY'
+engine.execute("DROP SCHEMA IF EXISTS HMU_TEST") 
+engine.execute("CREATE SCHEMA HMU_TEST") 
+engine.execute("USE HMU_TEST")
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:mysql@127.0.0.1/HMU_TEST'
 
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)
